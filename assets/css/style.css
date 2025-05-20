@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Khôi phục lại cỡ chữ mặc định theo rem */
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==========Common========== */
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0px auto;
+}
+
+/* ==========Header========== */
+header {
+  background: #fff;
+}
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 16px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #000;
+  line-height: 1.5;
+  padding: 0px 24px;
+}
+
+.search-bar {
+  background-color: #f5f5f5;
+  display: flex;
+  margin-left: 124px;
+  margin-right: 24px;
+  padding: 7px 12px 7px 20px;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 153px;
+  margin-right: 34px;
+}
+
+.search-bar input::placeholder {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: Poppins;
+  opacity: 0.5;
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 48px;
+  height: 1px;
+  left: 24px;
+  top: 21px;
+  background: black;
+  opacity: 0.5;
+}
+
+.line {
+  margin-top: 12px;
+  opacity: 0.3;
+  background: #000;
+}
