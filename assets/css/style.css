@@ -26,6 +26,12 @@ a {
   max-width: calc(100% - 48px);
   margin: 0px auto;
 }
+/* Header */
+
+header {
+  position: sticky;
+  top: -71px;
+}
 
 /* ==========Top Header========= */
 
@@ -68,7 +74,6 @@ a {
 }
 
 /* ==========Main Header========== */
-
 .main-header .body {
   display: flex;
   align-items: center;
