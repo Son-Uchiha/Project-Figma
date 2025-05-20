@@ -27,17 +27,49 @@ a {
   margin: 0px auto;
 }
 
-/* ==========Header========== */
-header {
-  background: #fff;
-}
-.header.fixed {
-  z-index: 1;
-  position: sticky;
-  top: -28px;
+/* ==========Top Header========= */
+
+.top-header {
+  color: white;
+  background: #000;
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
-.header .body {
+.top-header .body {
+  width: 859px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 12px 0;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sale p {
+  width: 474px;
+}
+
+.sale strong {
+  font-weight: 600;
+  text-decoration-line: underline;
+  line-height: 1.7;
+}
+
+.language {
+  margin-left: auto;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* ==========Main Header========== */
+
+.main-header .body {
   display: flex;
   align-items: center;
   padding: 40px 0 16px;
@@ -106,7 +138,6 @@ header {
 }
 
 .line {
-  margin-top: 12px;
   opacity: 0.3;
   background: #000;
 }
