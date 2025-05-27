@@ -19,6 +19,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .main-content {
@@ -26,11 +27,19 @@ a {
   max-width: calc(100% - 48px);
   margin: 0px auto;
 }
+
+.line {
+  border: none; /* Loại bỏ viền mặc định */
+  border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
 /* Header */
 
 header {
   position: sticky;
   top: -71px;
+  background: #fff;
+  z-index: 10;
 }
 
 /* ==========Top Header========= */
@@ -74,6 +83,7 @@ header {
 }
 
 /* ==========Main Header========== */
+
 .main-header .body {
   display: flex;
   align-items: center;
@@ -90,7 +100,6 @@ header {
 
 .nav a {
   position: relative;
-  color: #000;
   line-height: 1.5;
   padding: 0px 24px;
 }
@@ -142,7 +151,115 @@ header {
   opacity: 0.5;
 }
 
-.line {
-  opacity: 0.3;
+/* ==========Hero========== */
+
+.hero .body {
+  display: flex;
+}
+
+/* ==========Hero left========== */
+
+.hero .sidebar {
+  width: 20%;
+  padding: 40px 16px 0px 0px;
+  font-size: 1.6rem;
+  line-height: 1.5; /* 150% */
+  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.hero .sidebar .active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .sidebar li + li {
+  margin-top: 16px;
+}
+
+/* ==========Hero right========== */
+
+.hero .hero-banner {
+  width: 892px;
+  height: 344px;
+  margin: 40px 0 0 45px;
   background: #000;
+  color: #fff;
+}
+
+.hero .banner {
+  display: flex;
+  margin-left: 64px;
+  margin-top: 16px;
+  height: 281px;
+}
+
+.hero .banner-content {
+  width: 40%;
+  padding-top: 42px;
+}
+
+.hero .banner-content .apple {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.hero .banner-content p {
+  width: 294px;
+  font-family: "Inter", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.25; /* 125% */
+  letter-spacing: 1.92px;
+  margin-top: 20px;
+}
+
+.hero .banner-content .shopnow {
+  margin-top: 22px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.hero .banner-content .shop-now-btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fafafa;
+}
+
+.hero .banner-image {
+  overflow: hidden;
+}
+
+.hero .box-cirle {
+  display: flex;
+  width: 110px;
+  gap: 12px;
+  align-items: center;
+  margin-left: 353px;
+  margin-top: 23px;
+}
+
+.hero .cirle {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero .box-cirle .cirle:nth-child(3) {
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  background-color: red;
 }
