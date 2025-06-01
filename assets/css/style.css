@@ -378,6 +378,7 @@ header {
 .product-flex {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .product-flex .product-card {
@@ -392,7 +393,7 @@ header {
   margin-top: 40px;
 }
 
-.product-flex .product-image .discount {
+.discount {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -441,7 +442,7 @@ header {
   gap: 12px;
 }
 
-.product-card .product-price .current-price {
+.current-price {
   color: #db4444;
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -635,4 +636,18 @@ header {
 
 .boombox-left .buy-now:hover {
   background-color: rgba(0, 255, 98, 0.788);
+}
+
+/* ==========our-products========== */
+
+.our-products .title-top {
+  margin-top: 71px;
+}
+
+.our-products .discount {
+  background-color: #0f6;
+}
+
+.color-products {
+  margin-top: 8px;
 }
