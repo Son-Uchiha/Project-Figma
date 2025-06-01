@@ -544,3 +544,95 @@ header {
   border-radius: 4px;
   margin-left: auto;
 }
+
+/* ==========boombox========== */
+
+.boombox .body {
+  margin-top: 140px;
+  background-color: #000;
+  display: flex;
+}
+
+.boombox .boombox-left {
+  width: 46%;
+  padding: 69px 0px 69px 56px;
+}
+
+.boombox-left .title {
+  color: #0f6;
+  font-weight: 600;
+  line-height: 1.25; /* 125% */
+}
+
+.boombox-left .desc {
+  margin-top: 32px;
+  color: #fafafa;
+  width: 443px;
+  font-family: Inter;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.25; /* 125% */
+  letter-spacing: 1.92px;
+}
+
+.boombox-left .time-flex {
+  display: flex;
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.boombox-left .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #ffff;
+}
+
+.boombox-left .number {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.boombox-left .word {
+  font-size: 1.1rem;
+  line-height: 1.64; /* 163.636% */
+}
+
+.boombox-left .buy-now {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 16px 48px;
+  background-color: #0f6;
+  border-radius: 4px;
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+}
+
+.boombox .boombox-right {
+  width: 54%;
+  position: relative;
+}
+
+.image-boombox {
+  border-radius: 504px;
+  opacity: 0.3;
+  background: #d9d9d9;
+  width: 504px;
+  height: 500px;
+  filter: blur(100px);
+}
+
+.boombox-right img {
+  position: absolute;
+  top: 82px;
+  z-index: 1;
+}
+
+.boombox-left .buy-now:hover {
+  background-color: rgba(0, 255, 98, 0.788);
+}
